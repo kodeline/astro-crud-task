@@ -1,5 +1,6 @@
 import axios from "axios";
-import { BsFillTrashFill } from "react-icons/bs";
+import pkg from 'react-icons/bs/index.esm.js';
+const { BsFillTrashFill } = pkg;
 
 const baseURL = "https://restapi-task.fly.dev/api";
 
