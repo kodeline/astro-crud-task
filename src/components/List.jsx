@@ -1,4 +1,5 @@
 import axios from "axios";
+import { IconName } from "react-icons/bs";
 
 const baseURL = "https://restapi-task.fly.dev/api";
 
@@ -15,7 +16,7 @@ const List = ({ id, task, setUpdateUI, updateMode }) => {
       {task}
       <div className="icons">
         <p className="icon-edit" onClick={() => updateMode(id, task)}> Editar</p>
-        <p className="icon-basquet" onClick={removeTask} />Borrar
+        <BsFillTrashFill className="icon-basquet" onClick={removeTask} />
       </div>
     </li>
   );
