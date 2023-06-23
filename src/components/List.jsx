@@ -1,6 +1,4 @@
 import axios from "axios";
-import pkg from 'react-icons/bs/index.esm.js';
-const { BsFillTrashFill } = pkg;
 
 const baseURL = "https://restapi-task.fly.dev/api";
 
@@ -16,8 +14,8 @@ const List = ({ id, task, setUpdateUI, updateMode }) => {
     <li>
       {task}
       <div className="icons">
-        <p className="icon-edit" onClick={() => updateMode(id, task)}> Editar</p>
-        <BsFillTrashFill className="icon-basquet" onClick={removeTask} />
+        <i class='bx bx-edit-alt icon-edit' onClick={() => updateMode(id, task)} />
+        <i class='bx bx-trash icon-basquet' onClick={removeTask}  />
       </div>
     </li>
   );
