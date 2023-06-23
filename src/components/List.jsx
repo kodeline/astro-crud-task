@@ -1,5 +1,5 @@
 import axios from "axios";
-import { IconName } from "react-icons/bs";
+import { BsFillTrashFill } from "react-icons/bs";
 
 const baseURL = "https://restapi-task.fly.dev/api";
 
