@@ -1,8 +1,8 @@
-import React from "react";
 import { BsTrash } from "react-icons/bs";
-import { BiEditAlt } from "react-icons/bi";
+import pkg from "react-icons/bi";
 import axios from "axios";
 
+const { BiEditAlt } = pkg;
 const baseURL = "https://restapi-task.fly.dev/api";
 
 const List = ({ id, task, setUpdateUI, updateMode }) => {
