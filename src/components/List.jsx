@@ -1,5 +1,5 @@
 import { BsTrash } from "react-icons/bs";
-import pkg from "react-icons/bi";
+import { pkg } from "react-icons/bi";
 import axios from "axios";
 
 const { BiEditAlt } = pkg;
