@@ -1,7 +1,4 @@
-import { BsTrash, BsFillPencilFill } from "react-icons/bs";
-
 import axios from "axios";
-
 
 const baseURL = "https://restapi-task.fly.dev/api";
 
@@ -12,13 +9,13 @@ const List = ({ id, task, setUpdateUI, updateMode }) => {
       setUpdateUI((prevState) => !prevState);
     });
   };
-
+  
   return (
     <li>
       {task}
       <div className="icons">
-        <BsFillPencilFill className="icon-edit" onClick={() => updateMode(id, task)} />
-        <BsTrash className="icon-basquet" onClick={removeTask} />
+        <p className="icon-edit" onClick={() => updateMode(id, task)}> Editar</p>
+        <p className="icon-basquet" onClick={removeTask} />Borrar
       </div>
     </li>
   );
